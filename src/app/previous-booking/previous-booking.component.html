@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 20px;
+      }
+
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table style="width: 100%">
+      <caption>
+        <u> Previous Booking</u>
+      </caption>
+
+      <tr>
+        <th>Date</th>
+        <th>Pick point</th>
+        <th>Destination</th>
+        <th>Car type</th>
+        <th>Fare</th>
+      </tr>
+      <tr *ngFor="let b of previous">
+        <td>{{ b.cDate }}</td>
+        <td>{{ b.cPickupPoint }}</td>
+        <td>{{ b.cDestination }}</td>
+        <td>{{ b.cCartype }}</td>
+        <td>{{ b.cFare }}</td>
+      </tr>
+    </table>
+  </body>
+</html>

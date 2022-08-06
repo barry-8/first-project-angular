@@ -1,0 +1,33 @@
+<h2>ADD THE DRIVER DETAILS</h2>
+<form [formGroup]="driverForm" (ngSubmit)="addDriver()" action="#">
+  <table>
+    <tr>
+      <td><label for="id"> Enter Driver id:</label></td>
+      <td><input type="text" id="id" formControlName="id" /></td>
+    </tr>
+    <tr>
+      <td><label for="driverName"> Enter driverName:</label></td>
+      <td>
+        <input type="text" id="driverName" formControlName="driverName" />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="gender"> Enter gender:</label></td>
+      <td>
+        <input type="text" id="gender" formControlName="gender" />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="age"> Enter age:</label></td>
+      <td>
+        <input type="text" id="age" formControlName="age" />
+      </td>
+    </tr>
+    <tr>
+      <td><button type="submit">Add Driver</button></td>
+      
+      <td><button type="reset">Reset</button></td>
+    </tr>
+  </table>
+</form>
+

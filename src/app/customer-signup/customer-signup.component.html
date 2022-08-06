@@ -1,0 +1,46 @@
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form [formGroup]="addCustomerForm" (ngSubmit)="addCustomer()" action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Email Id</span>
+            <input type="text" placeholder="Enter your email id" required formControlName="emailId" />
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" required formControlName="phoneNumber" />
+          </div>
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your first name" required formControlName="firstName" />
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your last name" required formControlName="lastName" />
+          </div>
+          <div class="input-box">
+            <span class="details">User Name</span>
+            <input type="text" placeholder="Enter your user name" required formControlName="userName" />
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required formControlName="password" />
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="Enter your city" required formControlName="city" />
+          </div>
+          <div class="input-box">
+            <span class="details">State</span>
+            <input type="text" placeholder="Enter your state" required formControlName="state" />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

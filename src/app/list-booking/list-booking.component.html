@@ -1,0 +1,54 @@
+<h1>Booking List</h1>
+<body>
+  <h1>Booking List</h1>
+
+  <table class="container">
+    <thead>
+      <tr>
+        <th>
+          <h1>Booking No.</h1>
+        </th>
+        <th>
+          <h1>Pickup Location</h1>
+        </th>
+        <th>
+          <h1>Drop Location</h1>
+        </th>
+        <th>
+          <h1>Customer Id</h1>
+        </th>
+        <th>
+          <h1>Vehicle No.</h1>
+        </th>
+        <th>
+          <h1>Driver Id</h1>
+        </th>
+        <th>
+          <h1>Fare</h1>
+        </th>
+        <th><h1>Action</h1></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of bookings">
+        <td>{{ b.bookingNo }}</td>
+        <td>{{ b.pickupFrom }}</td>
+        <td>{{ b.dropAt }}</td>
+        <td>{{ b.customerId }}</td>
+        <td>{{ b.vehicleNo }}</td>
+        <td>{{ b.driverId }}</td>
+        <td>{{ b.fare }}</td>
+
+        <td>
+          <a
+            routerLink=""
+            routerLinkActive="active"
+            class="nav-link"
+            style="color: red; margin-left:5px;"
+            >Delete</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>

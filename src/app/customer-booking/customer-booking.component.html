@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" href="customer-booking.component.css" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Details</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">Enter Car Details</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Phone</span>
+              <input
+                type="text"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Pickup Location</span>
+              <input type="text" placeholder="Enter ZIP/Location" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Destination</span>
+              <input type="text" placeholder="Enter ZIP/Location" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Pick Up Date</span>
+              <input class="date" type="date" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Enter Car Type</span>
+              <input
+                type="text"
+                placeholder="Eg. 4-seater, 5-seater"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="form-label">Hour</span>
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <span class="select-arrow"></span>
+            </div>
+          </div>
+          <div class="input-box">
+            <span class="form-label">Min</span>
+            <select class="form-control">
+              <option>05</option>
+              <option>10</option>
+              <option>15</option>
+              <option>20</option>
+              <option>25</option>
+              <option>30</option>
+              <option>35</option>
+              <option>40</option>
+              <option>45</option>
+              <option>50</option>
+              <option>55</option>
+            </select>
+            <span class="select-arrow"></span>
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">AM/PM</span>
+            <select class="form-control">
+              <option>AM</option>
+              <option>PM</option>
+            </select>
+            <span class="select-arrow"></span>
+          </div>
+          <div class="button">
+            <input type="submit" value="Book Now" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+

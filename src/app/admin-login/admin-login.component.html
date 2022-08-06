@@ -1,0 +1,29 @@
+<!-- partial:index.partial.html -->
+
+<div id="bg"></div>
+
+<form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+  <div class="form-field">
+    <input
+      type="text"
+      id="adminId"
+      formControlName="adminId"
+      placeholder="Admin Id"
+      required
+    />
+  </div>
+
+  <div class="form-field">
+    <input
+      type="password"
+      id="adminName"
+      formControlName="adminName"
+      placeholder="Password"
+      required
+    />
+  </div>
+
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+</form>

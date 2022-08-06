@@ -1,0 +1,45 @@
+<body>
+  <h1>Vehicle List</h1>
+
+  <table class="container">
+    <thead>
+      <tr>
+        <th>
+          <h1>Vehicle No.</h1>
+        </th>
+        <th>
+          <h1>Vehicle Model</h1>
+        </th>
+        <th>
+          <h1>Vehicle Type</h1>
+        </th>
+        <th>
+          <h1>Color</h1>
+        </th>
+
+        <th>
+          <h1>Action</h1>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of car">
+        <td>{{c.vehicleNo}}</td>
+        <td>{{c.vehicleModel}}</td>
+        <td>{{c.vehicleType}}</td>
+        <td>{{c.vehicleColor}}</td>
+        <td>
+         
+        <a
+        routerLink=""
+        routerLinkActive="active"
+        class="nav-link"
+        style="color:red; margin-left:5px;"
+        >Delete</a>
+        
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</body> 

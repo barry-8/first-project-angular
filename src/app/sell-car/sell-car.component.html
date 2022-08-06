@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Details</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Enter Car Details</div>
+        <div class="content">
+            <form action="#" [formGroup]="sellCarForm" (ngSubmit)="submit()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Registration Number</span>
+                        <input type="text" placeholder="eg.TN13C3333" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Registration Year</span>
+                        <input type="text" placeholder="Eg.2015" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Brand</span>
+                        <input type="text" placeholder="eg.Honda" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Car Model</span>
+                        <input type="text" placeholder="Eg.City" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Select variant</span>
+                        <input type="text" placeholder="Eg.petrol/diesel/Hybrid" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Transmisson</span>
+                        <input type="text" placeholder="Eg.Automatic ,Manual" required />
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

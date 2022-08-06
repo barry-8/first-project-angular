@@ -1,0 +1,31 @@
+<h2>ADD THE CAR DETAILS</h2>
+<form [formGroup]="carform" (ngSubmit)="addCar()" action="#">
+  <table>
+    <tr>
+      <td><label for="vehicleNo"> Enter Vehicle No:</label></td>
+      <td><input type="text" id="vehicleNo" formControlName="vehicleNo" /></td>
+    </tr>
+    <tr>
+      <td><label for="vehicleModel"> Enter vehicleModel:</label></td>
+      <td>
+        <input type="text" id="vehicleModel" formControlName="vehicleModel" />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="vehicleType"> Enter vehicleType:</label></td>
+      <td>
+        <input type="text" id="vehicleType" formControlName="vehicleType" />
+      </td>
+    </tr>
+    <tr>
+      <td><label for="vehicleColor"> Enter vehicleColor:</label></td>
+      <td>
+        <input type="text" id="vehicleColor" formControlName="vehicleColor" />
+      </td>
+    </tr>
+    <tr>
+      <td><button type="submit">Add Car</button></td>
+      <td><button type="reset">Reset</button></td>
+    </tr>
+  </table>
+</form>

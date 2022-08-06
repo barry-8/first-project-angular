@@ -1,0 +1,51 @@
+<body>
+  <h1>Driver List</h1>
+
+  <table class="container">
+    <thead>
+      <tr>
+        <th>
+          <h1>Id</h1>
+        </th>
+
+        <th>
+          <h1>Name</h1>
+        </th>
+
+        <th>
+          <h1>Gender</h1>
+        </th>
+
+        <th>
+          <h1>Age</h1>
+        </th>
+
+        <th>
+          <h1>Action</h1>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let d of driver">
+        <td>{{ d.id }}</td>
+
+        <td>{{ d.driverName }}</td>
+
+        <td>{{ d.gender }}</td>
+
+        <td>{{ d.age }}</td>
+
+        <td>
+          <a
+            routerLink="/app-delete-driver"
+            routerLinkActive="active"
+            class="nav-link"
+            style="margin-left: 5px; color: red"
+            >Delete</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>

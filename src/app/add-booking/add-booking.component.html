@@ -1,0 +1,59 @@
+<form [formGroup]="Bookingform" (ngSubmit)="addBooking()">
+
+
+    <table>
+        <tr>
+            <td><label for="bookingNo"> Enter Booking No :</label></td>
+
+            <td><input type="text" id="bookingNo" formControlName="bookingNo" /></td>
+        </tr>
+
+        <tr>
+            <td><label for="pickupFrom"> Enter Pickup Location:</label></td>
+
+            <td><input type="text" id="pickupFrom" formControlName="pickupFrom" /></td>
+        </tr>
+
+        <tr>
+            <td><label for="dropAt"> Enter Destination:</label></td>
+
+            <td>
+                <input type="text" id="dropAt" formControlName="dropAt" />
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="customerId"> Enter Customer Id:</label></td>
+
+            <td>
+                <input type="text" id="customerId" formControlName="customerId" />
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="vehicleNo"> Enter Vehicle No:</label></td>
+
+            <td><input type="text" id="vehicleNo" formControlName="vehicleNo" /></td>
+        </tr>
+
+        <tr>
+            <td><label for="driverId"> Enter Driver Id:</label></td>
+
+            <td><input type="text" id="driverId" formControlName="driverId" /></td>
+        </tr>
+
+        <tr>
+            <td><label for="fare"> Enter the Fare:</label></td>
+
+            <td>
+                <input type="text" id="fare" formControlName="fare" />
+            </td>
+        </tr>
+
+        <tr>
+            <td><button type="submit">Add Booking</button></td>
+
+            <td><button type="reset">Reset</button></td>
+        </tr>
+    </table>
+</form>
